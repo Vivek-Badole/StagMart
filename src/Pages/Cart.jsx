@@ -65,8 +65,8 @@ const Cart = () => {
               <p>Order Total:</p>
               <p><FormatPrice price={shipping_fee+total_price} /></p>
             </div>
-            <NavLink to="/orders">
-            <Button>Place Order</Button>
+            <NavLink to="/checkout">
+            <Button>Checkout</Button>
             </NavLink>
             
           </div>

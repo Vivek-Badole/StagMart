@@ -12,6 +12,9 @@ import { ThemeProvider } from "styled-components";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import OrderPage from "./Pages/OrderPage";
+import CheckoutPage from "./Pages/CheckoutPage";
+import PaymentPage from "./Pages/PaymentPage";
+import YourPayment from "./Pages/YourPayment";
 
 function App() {
   const theme = {
@@ -48,11 +51,17 @@ function App() {
       <Route path="/products/:id" element={<Product />} />
       <Route path="/cart" element={<Cart /> } />
       <Route path="/orders" element={<OrderPage /> } />
+      <Route path="/checkout" element={<CheckoutPage />} />
+      <Route path="/payment" element={<PaymentPage />} />
+      <Route path="/loading" element={<YourPayment />} />
       <Route path="*" element={<Error />} />
     </Routes>
+   
     <Footer />
+   
    </Router>
    </ThemeProvider>
+   
   );
 }
 

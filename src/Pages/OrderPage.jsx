@@ -12,6 +12,9 @@ const OrderPage = () => {
           <h2>Thank You <img className="smiley" src="./images/smiley.png" alt="success" /></h2>
           <h3>Your payment was successful and your order is complete</h3>
         </div>
+        <NavLink to="/">
+            <Button>Continue Shopping</Button>
+          </NavLink>
       </div>
     </Wrapper>
   );
@@ -25,6 +28,7 @@ const Wrapper = styled.section`
     }
     h3 {
       font-size: 4.2rem;
+      margin-bottom:10px;
     }
     p {
       margin: 2rem 0;
