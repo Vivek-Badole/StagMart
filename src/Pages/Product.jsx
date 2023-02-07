@@ -11,7 +11,7 @@ import { MdSecurity } from "react-icons/md";
 import Star from "../Components/Star";
 import AddToCart from "../Components/AddToCart";
 
-const API = "http://localhost:8081/products";
+const API = "https://stag-mart-data.onrender.com/products";
 
 const Product = () => {
   const { getSingleProduct, isSingleLoading, singleProduct } =

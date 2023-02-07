@@ -5,7 +5,7 @@ import reducer from "../Reducer/ProductReducer";
 
 const ProductContext = createContext();
 
-const API = "http://localhost:8081/products";
+const API = "https://stag-mart-data.onrender.com/products";
 
 const initialState = {
   isLoading: false,
